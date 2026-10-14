@@ -36,6 +36,6 @@ async def moderate_text(body: TextModerationRequest):
         )
 
         return TextModerationResponse(
-            violating=(violatingResult.noul > policy.acceptance_range),
+            violating=(violatingResult.noul >= policy.acceptance_range),
             truthiness=violatingResult.noul,
         )

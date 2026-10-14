@@ -1,6 +1,6 @@
 # Jev Moderation API 
 
-Built with FastAPI, using ruff for styling and linting. 
+Built with FastAPI, using ruff for styling and linting. Very primative and made in 1hr30m - more a proof of concept.
 
 ## Development 
 

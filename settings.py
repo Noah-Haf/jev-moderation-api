@@ -14,10 +14,10 @@ class Settings(BaseSettings):
     policies: dict[str, Policy] = {
         "General": Policy(
             name="General",
-            instructions="Is this message unsuitable for an audience aged 13+ under the policy below? Content must not be explicit",
+            instructions="Is this message unsuitable for an audience aged 16+ under the policy below? Content must not be explicit",
             truthy="""A message is considered violating 
             
-            if strong and swearing is used often and directly and if words are strong. 
+            if strong and swearing is used often and directly and if words are strong and directed.
             No graphic refrences to romance or relationships are 
             acceptable. 
             No Graphic violence, gore, or torture 
@@ -26,7 +26,7 @@ class Settings(BaseSettings):
             No Content promoting harassment, doxxing, or grooming""",
             falsy="""A message is considered acceptable if 
 
-            Mild language and occasional swearing, often limited to milder words
+            Mild language and occasional swearing, often limited to milder words and non targeted
             Non-graphic references to romance, crushes, or relationships
             Discussion of difficult topics such as bullying, grief, or mental health, handled without graphic detail
             Mild violence in fictional or gaming contexts, without gore
